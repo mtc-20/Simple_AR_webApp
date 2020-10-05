@@ -1,0 +1,24 @@
+
+body {
+    text-align: center;
+    background-color:rgb(42, 84, 104);
+    background-image: url("{{url_for('static', filename='Logo_BG.png')}}");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    /* background-position-y: ; */
+}
+
+h1 {
+    font-size: 8vmin;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    max-width: 50%;
+    min-height: 40%;
+    background-color: rgb(66, 185, 189);
+    margin-left: 25%;
+    box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
+}
+
+video {
+    border: cadetblue ;
+}
