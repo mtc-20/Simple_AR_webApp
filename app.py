@@ -15,7 +15,7 @@ from camera import VideoCam
 import cv2
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 video_stream = VideoCam()
 
@@ -36,5 +36,4 @@ def video_feed():
     return Response(gen(video_stream), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', debug=True, port='5000')
-    pass
+    app.run()
